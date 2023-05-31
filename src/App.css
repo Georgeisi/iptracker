@@ -1,38 +1,72 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bg-image{
+  background-image: url('./images/pattern-bg-desktop.png');
+  background-repeat: no-repeat;
   color: white;
+  width: 100vw;
+  height: 60vw;
+}
+.brad{
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.brad1{
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.mw1240{
+  width: 90%;
+  max-width: 900px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.mw650{
+  width: 90%;
+  max-width: 650px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.ip{
+  box-shadow: 30px;
+  top: 100px;
+  height: 290px;
+  padding: 0;
+  /* left: 30px; */
+  right: 20px;
+  z-index: 1000;
+  /* height: 300px; */
+  
+}
+.ip h1,h2,h3,p{
+  font-size: medium;
+  padding: 0;
+  margin: 0;
+}
+.x{
+  width: 100%;
+}
+@media(min-width:768px){
+  .ip{
+    top: 230px;
+    height: 100px;
+    left: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  .bg-image{
+    height: 45vh;
   }
+  .x{
+    width: unset;
+  }
+  
+}
+.f{
+  font-size: large;
 }
